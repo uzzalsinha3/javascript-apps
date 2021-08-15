@@ -1,0 +1,82 @@
+#main{
+	width: 50%;
+	height : 500px;
+	background-color: #f5f1da;
+	float: left;
+	margin-left: 425px;
+}
+#main input{
+	height: 30px;
+	width: 55%;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	font-size: 20px;
+
+}
+#main label{
+	font-size: 23px;
+	padding-left: 50px;
+	margin-bottom: 15px;
+}
+#folafol{
+	height: 500px;
+	width: 25%;
+	float: left;
+	margin-top: 40px;
+	background-color: tomato;
+}
+#total{
+	height:200px;
+	width: 95%;
+	padding: 20px;
+	background-color: white;
+}
+#avg{
+	height:80px;
+	width: 95%;
+	padding: 20px;
+	background-color: white;
+}
+#grade{
+	height:40px;
+	width: 95%;
+	padding: 20px;
+	background-color: white;
+}
+#Button{
+	margin-left: 380px;
+}
+#head{
+	margin: 20px;
+}
+ul li a{
+	color:#004500;
+	font-size: 20px;
+	font-family: arial;
+	/*background-color: #ff0000;*/
+	text-align: center;
+	margin: 2px;
+	/*height: 10px;*/
+	padding: 2px;
+}
+/*a:link{
+	text-decoration: none;
+	border-radius: 5px;
+	margin:4px;
+	border: 1px solid #ffffff;
+	background-color: #ba7967;
+
+}
+a: visited{
+	color: yellow;
+}
+
+a:hover{color: #ffffff;
+
+}
+
+a:active{
+	#124879;
+}*/
+
+

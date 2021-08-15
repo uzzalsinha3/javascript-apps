@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LEDP Web 104 </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script>
+
+	function total(){
+  	var bisoy1 = parseInt(document.getElementById("ban").value);
+ 	 var bisoy2 = parseInt(document.getElementById("eng").value);
+  	var bisoy3 = parseInt(document.getElementById("math").value);
+
+ 	 if(bisoy1>100 || bisoy2>100 || bisoy3>100){
+  	alert("Please Enter mark within 100");
+ 	 }
+ 	 else{
+  	var total = bisoy1 + bisoy2 + bisoy3;
+  	document.getElementById("total").innerHTML = "Bangla marks :"+ bisoy1+ "<br> English: "+ bisoy2+"<br> Math: "+ bisoy3+"<br>-----<br> Total Marks"+ total;
+  	}
+	}
+	function Average(){
+  	var bisoy1 = parseInt(document.getElementById("ban").value);
+ 	 var bisoy2 = parseInt(document.getElementById("eng").value);
+  	var bisoy3 = parseInt(document.getElementById("math").value);
+
+  	if(bisoy1>100 || bisoy2>100 || bisoy3>100){
+  	alert("Please Enter mark within 100");}
+  	else{
+  		var total = bisoy1 + bisoy2 + bisoy3;
+  		var ave= total/3;
+  		document.getElementById("avg").innerHTML = "Your Avg marks"+ ave;
+  	}
+
+}
+
+function grade(){
+				var bisoy1 = parseInt(document.getElementById("ban").value);
+  				var bisoy2 = parseInt(document.getElementById("eng").value);
+ 				 var bisoy3 = parseInt(document.getElementById("math").value);
+ 				 if(bisoy1>100 || bisoy2>100 || bisoy3>100){
+  					alert("Please Enter mark within 100");}
+  				else{
+  					var total = bisoy1 + bisoy2 + bisoy3;
+  					var ave= total/3; 
+
+  					if(ave>=80 && ave<=100){
+  						document.getElementById("grade").innerHTML ="Your grade is : A+"; 
+  					}
+
+  					else if(ave>=70 && ave<=79){
+  						document.getElementById("grade").innerHTML ="Your grade is : A"; 
+  					}
+  					else if(ave>=60 && ave<=69){
+  						document.getElementById("grade").innerHTML ="Your grade is : B"; }
+  					else if(ave>=50 && ave<=59){
+  						document.getElementById("grade").innerHTML ="Your grade is : C"; }
+  					else if(ave>=40 && ave<=49){
+  						document.getElementById("grade").innerHTML ="Your grade is : D"; }		
+  					else{
+  						document.getElementById("grade").innerHTML ="Your grade is : F"; }		
+
+  				}
+
+}
+
+
+</script>
+    
+</head>
+
+
+ <body>
+	<div id ="main">
+		<div id="head"><h2>Grading system</h2></div>
+		<label>Bangla</label><input type="text" id="ban"><br>
+		<label>English</label><input type="text" id="eng"><br>
+		<label>Math</label><input type="text" id="math"><br>
+
+		<button>Total</button>
+		<button class="btn">Average</button>
+		<button class="btn">Grade</button>
+	</div> 
+	<div id="folafol">
+		<div id="head1"><h1>Total</h1></div>
+			<div id="total">
+			
+			</div>
+		<div id="head2"><h1>Average</h1></div>
+			<div id="avg">
+				
+			</div>
+		<div id="head3"><h1>Grade</h1></div>
+			<div id="grade">
+				
+			</div>			
+		
+	</div>
+
+<!-- <script>
+
+function total(){
+  var bisoy1 = parseInt(document.getElementById("ban").value);
+  var bisoy2 = parseInt(document.getElementById("eng").value);
+  var bisoy3 = parseInt(document.getElementById("math").value);
+
+  if(bisoy1>100 || bisoy2>100 || bisoy3>100){
+  	alert("Please Enter mark within 100");
+  }
+  else{
+  	var total = bisoy1 + bisoy2 + bisoy3;
+  	document.getElementById("total").innerHTML = "Bangla marks :"+ bisoy1+ "<br> English: "+ bisoy2+"<br> Math: "+ bisoy3+"<br>-----<br> Total Marks"+ total;
+  }
+}
+function Average(){
+  var bisoy1 = parseInt(document.getElementById("ban").value);
+  var bisoy2 = parseInt(document.getElementById("eng").value);
+  var bisoy3 = parseInt(document.getElementById("math").value);
+
+  if(bisoy1>100 || bisoy2>100 || bisoy3>100){
+  	alert("Please Enter mark within 100");}
+  else{
+  		var total = bisoy1 + bisoy2 + bisoy3;
+  		var ave= total/3;
+  		document.getElementById("avg").innerHTML = "Your Avg marks"+ ave;
+  	}
+
+}
+
+function grade(){
+				var bisoy1 = parseInt(document.getElementById("ban").value);
+  				var bisoy2 = parseInt(document.getElementById("eng").value);
+ 				 var bisoy3 = parseInt(document.getElementById("math").value);
+ 				 if(bisoy1>100 || bisoy2>100 || bisoy3>100){
+  					alert("Please Enter mark within 100");}
+  				else{
+  					var total = bisoy1 + bisoy2 + bisoy3;
+  					var ave= total/3; 
+
+  					if(ave>=80 && ave<=100){
+  						document.getElementById("grade").innerHTML ="Your grade is : A+"; 
+  					}
+
+  					else if(ave>=70 && ave<=79){
+  						document.getElementById("grade").innerHTML ="Your grade is : A"; 
+  					}
+  					else if(ave>=60 && ave<=69){
+  						document.getElementById("grade").innerHTML ="Your grade is : B"; }
+  					else if(ave>=50 && ave<=59){
+  						document.getElementById("grade").innerHTML ="Your grade is : B"; }
+  					else if(ave>=40 && ave<=49){
+  						document.getElementById("grade").innerHTML ="Your grade is : B"; }		
+  					else(ave>=33 && ave<=39){
+  						document.getElementById("grade").innerHTML ="Your grade is : F"; }		
+
+  				}
+
+}
+
+</script> -->
+	
+</body>
+</html>

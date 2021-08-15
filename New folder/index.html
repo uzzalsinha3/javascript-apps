@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LEDP Web 104 </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    
+    <style>
+    	
+    </style>
+
+</head>
+<body style="height: 3000px;" onload="alert('do not enter');">
+	<p id="text"> I donot know</p>
+	<button type="button" onclick='uzzal()'>I can</button>
+	
+<button class="btn btn-success" onclick='ledp()'>Print</button>
+<button type="button" class="btn btn-secondary" onclick="document.getElementById('time').innerHTML= Date();">Date</button>
+
+
+<div>
+	
+<p id="time"></p>
+</div>
+
+
+<!-- <button id="uzzal" type="button" onclick='document.getElementById("yes").innerHTML ="Now I can not JS" '> I can't -->
+       			
+       	<!-- 	</button> -->
+
+<div class="div ml-3 mt-5">
+	<label for="">Name</label>
+<input type="text" id="name">
+
+<label for="">Mark</label>
+<input type="text" id="mark">
+<div>
+	<button class="btn btn-primary" onclick="grade()">Grade
+		
+	</button>
+
+
+
+
+
+ <script type="text/javascript" src="js/main.js"></script>
+ <script type="text/javascript">
+function uzzal(){
+	document.getElementById("text").innerHTML =" I can";
+}
+function ledp(){
+	document.getElementById("text").innerHTML =" I can";
+
+}
+
+var name ="<strong>Name:</strong>Rahim<br/>";
+var age ="<strong>Age:</strong>11<br/>";
+var address ="<strong>Address:</strong>Rajshahi"
+
+document.write(name);
+document.write(age);
+document.write(address);
+document.write("uzzal"+"Kumar <br>");
+
+// var fN ="Uzzal";
+// var lN ="Babu";
+// var fullName=fN+lN;
+// document.write(fullName);
+// document.write("He is " + fullName +"<br>");
+
+// var x ="Uzzal";
+// var y= x.length;
+// document.write(y + "<br/>");
+
+// var word= prompt("Enter your word: ");
+// document.write("Number of Letters :" + word.length);
+
+// var text ="Mubin Limited";
+
+// document.write(text.charAt(4));
+
+// text= text.toLowerCase();
+// document.write(text);
+// var capital="uzzal";
+// capital=capital.toUpperCase();
+// document.write(capital);
+
+var fName ="Rahim ";
+var lName ="Khan";
+var fullName = fName.concat(lName);
+document.write(fullName + "<br>");
+
+document.write(fName.concat(lName));
+
+var name ="Frelancer";
+var nameOut =name.slice(1,3);
+
+document.write(nameOut);
+
+var num = 2;
+console.log(typeof(num));
+var numb =5;
+numb = toString(numb);
+console.log(typeof(numb));
+
+document.write(2**5 + "<br/>");
+var x = 5;
+document.write(--x + "<br>");//pre decrement
+var y = 16;
+document.write(y%3 + "<br>");
+var p = 7;
+document.write(p++ +"<br>");
+document.write(p++ +"<br>");
+document.write(15+3);
+document.write(15*3);
+document.write(15+3);
+document.write(15+3 + "<br>");
+
+var a = 9;
+var b = 4;
+a+=b;
+console.log(a);
+var x = 18;
+x-=12;
+console.log(x);
+
+
+
+
+// var m = prompt("Enter 1st Number : ");
+// var n = prompt("Enter 2nd Number : ");
+// m=parseInt(m, 10);
+// n=parseInt(n, 10);
+// var min;
+// min = m - n;
+// document.write(" Total : " + m + "-" + n + "=" + min + "<br>");
+// var sum;
+// sum = m +n;
+// document.write(" Total : " + m + "+" + n + "=" + sum + "<br>");
+// var mult;
+// mult = m*n;
+// document.write(" Total : " + m + "*" + n + "=" + mult +"<br>");
+// var div;
+// div = m/n;
+// document.write(" Total : " + m +"/" + n + "=" + div + "<br>");
+// var mod;
+// mod = m%n;
+// document.write(" Total : " + m + "%" + n + "=" + mod + "<br>")
+// ex = m**n;
+// document.write(" Total : " + m + "**" + n + "=" + ex + "<br>")
+
+
+// var F = parseFloat(prompt("Enter Farenheight: "));
+// var C =(F -32) * (5/9);
+// document.write("Celcius= " + C + "<br>");
+// var C = parseFloat(prompt("Enter Farenheight: "));
+// var F =(C * 9/5) + 32;
+// document.write("Farenheight= " + F + "<br>°F");
+
+// document.write((20==20) + "<br/>");
+// document.write((20==="20") + "<br>");
+
+// var x = 5;
+// var y = 66;
+// var z = 8;
+// document.write(x>y && y<z);
+// var name = prompt("Enter your name ");
+// var marks = prompt("Enter Mark: ");
+
+// document.write("Name : " + name + "<br>");
+// if(marks> 100 || marks <0){
+// 	document.write("Your Mark is <b> Invalid");
+// }
+// else if(marks>= 80 && marks <=100){
+// 	document.write("You got <b> A+ and GPA 5<b>");
+// }
+// else if(marks>= 70 && marks <=79){
+// 	document.write("You got <b> A and GPA 4 <b>");
+// }
+// else if(marks>= 60 && marks <=69){
+// 	document.write("You got <b> A+<b>");
+// }
+// else if(marks>= 50 && marks <=59){
+// 	document.write("You got <b> A+<b>");
+// }
+// else if(marks>= 40 && marks <=49){
+// 	document.write("You got <b> A+<b>");
+// }
+// else if(marks>= 33 && marks <=39){
+// 	document.write("You got <b> A+<b>");
+// }
+// else{
+// 	document.write("You Failed + F ");
+
+// }
+
+var num = prompt("enter ");
+switch(num){
+	case "0":
+		document.write("Zero");
+		case "1":
+			document.write("One");
+		break;
+		case "2":
+			document.write("Two");
+		break;
+		case "3":
+			document.write("Three");
+		break;	
+		case "4":
+			document.write("Four");
+		break;	
+		case "5":
+			document.write("Five");
+		break;
+		case "6":
+			document.write("Six");
+			break;
+		case "7":
+			document.write("Seven");
+			break;
+		case "8":
+			document.write("Eight");
+		break;
+		case "9":
+			document.write("Nine");			
+			break;	
+		default:
+		document.write("Invalid");
+
+}
+
+
+ </script>
+
+  
+            
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+   
+</body>
+</html>
+
+
+
+
+<!-- yourname @ domainname.com
+
+yourname number @ domainname.com 
+
+
+
+your_name @ domainname.com
+your.name @ domainname.com
+ -->

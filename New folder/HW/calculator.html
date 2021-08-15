@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LEDP Web 104 </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    
+    <style>
+    	
+    </style>
+
+</head>
+
+<!-- https://youtu.be/lLsjslTtuTo -->
+
+ <body>
+	<div class="Container">
+		<form name="calculator">
+
+			<input id="finalanswer" name="fol" type="text"/> <br/>
+
+			<input onclick="calculator.fol.value += '1' " type="button" value="1"/>
+			<input onclick="calculator.fol.value += '2' " type="button" value="2"/>
+			<input onclick="calculator.fol.value += '3' " type="button" value="3"/>
+			<br/>
+			<input onclick="calculator.fol.value += '4' " type="button" value="4"/>
+			<input onclick="calculator.fol.value += '5' " type="button" value="5"/>
+			<input onclick="calculator.fol.value += '6' " type="button" value="6"/>
+			<br/>
+			<input onclick="calculator.fol.value += '7' " type="button" value="7"/>
+			<input onclick="calculator.fol.value += '8' " type="button" value="8"/>
+			<input onclick="calculator.fol.value += '9' " type="button" value="9"/>
+			<br/>
+			<input onclick="calculator.fol.value += '+' " type="button" value="+"/>
+			<input onclick="calculator.fol.value += '-' " type="button" value="-"/>
+			<input onclick="calculator.fol.value += '/' " type="button" value="/"/>
+			<br/>
+			<input onclick="calculator.fol.value += '0' " type="button" value="0"/>
+			<input onclick="calculator.fol.value += '*' " type="button" value="*"/>
+			<input onclick="calculator.fol.value = eval(calculator.fol.value)" type="button" value="="/>
+			<br/>
+			<input id="poriskar" onclick="calculator.fol.value = '' " type="button" value="Clear"/>
+		</form>
+	</div> 		
+		<script>
+
+var F = parseFloat(prompt("Enter Farenheight: "));
+var C =(F -32) * (5/9);
+document.write("Celcius= " + C + "°C<br>");
+var C = parseFloat(prompt("Enter Celcius: "));
+var F =(C * 9/5) + 32;
+document.write("Farenheight= " + F + "°F");
+</script>
+	
+</body>
+</html>

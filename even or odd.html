@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LEDP</title>
+  <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-info fixed-top">
+      
+      <div class="container">
+        <button class="navbar navbar-toggler" type="button" data-toggle="collapse" data-target="#uzzal">
+          <span class="navbar-toggler-icon"></span>
+          
+        </button>
+        <a class="navbar-brand mr-auto" href="home.html"><img class="rounded-circle" src="img/ledp1.png" alt="" width="90px;" ></a>
+        <div class="collapse navbar-collapse" id="uzzal">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ul class="navbar-nav mr-auto list-unstyled">
+          <li class="navbar-item"><a class="nav-link" href="dashboard.html">Home</a></li>
+          <li class="navbar-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+          <li class="navbar-item"><a class="nav-link" href="grade.html">Grading System</a></li>
+          <li class="navbar-item"><a class="nav-link" href="temperature.html">Temperature</a></li>
+          <li class="navbar-item active"><a class="nav-link" href="even or odd.html">Even or Odd</a></li>
+          <li class="navbar-item"><a class="nav-link" href="vowel.html">Letter</a></li>
+          <li class="navbar-item"><a class="nav-link" href="positive.html">Number</a></li>
+        </div>
+
+        
+      </div>
+    </nav>
+  </header>   
+
+  <br><br><br><br>
+	<section>
+    <h1 class="" style="text-align: center;">Even or Odd Number</h1>
+    <div class="card mx-auto pt-8" style="width:300px">
+          <img class="card-img-top mx-auto" src="img/mubin.png" style="width: 200px; height: 110px;"alt="image">
+          <div class="card-body p-5" style="background-color: #f5f1da">
+            <div class="card-text"><input type="text" placeholder="Enter your Number " id="n" style="text-align: center;"><br><br>
+              <button class="btn btn-secondary" onclick="change()" style="margin-left: 65px;"> Click</button><br><br>
+                <textarea class="form-control" rows="2" id="r" placeholder="Result" style="text-align: center;"></textarea><br>
+                <input class="bg-warning" onclick= "output()" type="button" style="margin-left: 65px;" value="Reset">
+            </div>
+          </div>
+
+     </div>
+    <div class="footer fluid-container fixed-bottom" style="background-image: linear-gradient(to right, #679b9b , #fffada); width:100%;">
+        <p class="text-center pt-2">&#169;2020-2025.<br>
+          All rights reserved.<br>
+          Powered by <strong>Mubin Ltd.(WDD-104)</strong>.
+    </div>
+  </section>
+	<script>
+  function change() {
+   
+    var number = document.getElementById('n').value;
+        number=parseInt(number);
+  if(number%2==0){
+            document.getElementById('r').value= " Even"
+        }
+        
+        else{
+            document.getElementById('r').value= " Odd"
+        } 
+    }  
+    function output(){
+    document.getElementById('n').value = '';
+    document.getElementById('r').value = '';
+  }  
+	</script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script> 
+</body>
+</html>

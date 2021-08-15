@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-info fixed-top">
+      
+      <div class="container">
+        <button class="navbar navbar-toggler" type="button" data-toggle="collapse" data-target="#uzzal">
+          <span class="navbar-toggler-icon"></span>
+          
+        </button>
+        <a class="navbar-brand mr-auto" href="home.html"><img class="rounded-circle" src="img/ledp1.png" alt="" width="90px;" ></a>
+        <div class="collapse navbar-collapse" id="uzzal">
+        <ul class="navbar-nav mr-auto list-unstyled">
+          <li class="navbar-item"><a class="nav-link" href="dashboard.html">Home</a></li>
+          <li class="navbar-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+          <li class="navbar-item"><a class="nav-link" href="grade.html">Grading System</a></li>
+          <li class="navbar-item"><a class="nav-link" href="temperature.html">Temperature</a></li>
+          <li class="navbar-item"><a class="nav-link" href="even or odd.html">Even or Odd</a></li>
+          <li class="navbar-item active"><a class="nav-link" href="vowel.html">Letter</a></li>
+          <li class="navbar-item"><a class="nav-link" href="positive.html">Number</a></li>
+        </div>
+
+        
+      </div>
+    </nav>
+  </header> 
+  <br><br><br><br>
+	<section>
+		<h1 class="" style="text-align: center;"> Vowel or Consonant Finding</h1>
+
+		<!-- <div style="margin:70px 200px 0 100px;">
+ 		 	<br>
+  			<input type="text" placeholder="Enter your Letter " id="ll" style="width: 400px; height: 50px; text-align: center;"> 
+  			<button class="btn" onclick="change()"> <img src="img/ck.png" style="width: 120px; height: 50px;"> </button>
+  			<input placeholder="Vowel or Consonant" id="result" style="width: 400px; height: 50px; text-align: center;" ><br>
+  			 <input class="bg-warning" onclick= "allClear()" type="button" value="Reset">
+
+		</div>
+    <div class="container bg-info" style="height: 120px; width: 150px; border: 1 px solid #000000;" id= "output">
+      
+    </div> -->
+
+
+
+
+
+ <!--      <div class="card">
+  <div class="card-header"><input type="text" placeholder="Enter your Letter " id="ll" style="width: 400px; height: 50px; text-align: center;"> </div>
+  <div class="card-body"><button class="btn" onclick="change()"> <img src="img/ck.png" style="width: 120px; height: 50px;"> </button></div>
+  <div class="card-footer"><input class="bg-warning" onclick= "allClear()" type="button" value="Reset">
+    <div class="container bg-info" id= "output">
+      
+    </div>
+
+
+  </div>
+</div> -->
+
+<div class="card mx-auto" style="width:400px">
+  <img class="card-img-top mx-auto rounded-circle" src="img/v or c.png" style="width: 200px; height: 180px;"alt="image">
+  <div class="card-body p-5">
+    <!-- <h4 class="card-title">Vowel or Consonant</h4> -->
+    <div class="card-text"><input type="text" placeholder="Enter your Letter" id="ll" style="text-align: center; padding-left: 11px; margin-left: 45px;"><br>
+      <button class="btn" onclick="change()"> <img src="img/ck.png" style="width: 120px; height: 50px; margin-left: 80px;"> </button><br>
+        <textarea class="form-control" rows="5" id="output" placeholder="Result"></textarea><br>
+        <input class="bg-warning" onclick= "allClear()" type="button" style="margin-left: 115px;" value="Reset">
+
+
+    </div>
+   
+  </div>
+</div>
+
+
+
+
+
+
+	</section>
+<script>  
+  function change() {
+    var letter = document.getElementById('ll').value;
+    letter=letter.toLowerCase();
+
+    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+            document.getElementById('output').innerHTML = "Vowel";
+            } 
+        else {
+            document.getElementById('output').innerHTML = "Consonant";
+            }
+  }
+  function allClear(){
+    document.getElementById('ll').value= '';
+    document.getElementById('output').innerHTML= '';
+  }
+</script>
+</body>
+</html>
